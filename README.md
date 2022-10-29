@@ -1,6 +1,6 @@
 # PNS-HADatAc
 
-Welcome to the PNS-HADatAc Github. This repository has the objective of storing all HADatAc artifacts developed in support of PNS (https://www.pns.icict.fiocruz.br/). In here, you will find the complete description of the contents, and how to use them. This README is being constantly updated.
+Welcome to the PNS-HADatAc Github repository. This repository has the objective of storing all HADatAc artifacts developed in support of PNS (https://www.pns.icict.fiocruz.br/). In here, you will find the complete description of the contents, and how to use them. This README is being constantly updated.
 
 
 ## Supporting Ontologies

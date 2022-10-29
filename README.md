@@ -31,4 +31,4 @@ Location: `/metadata`
 
 ### PNS Data Extractor
 
-https://129.159.54.58/pns2019
+http://129.159.54.58/pns2019

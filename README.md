@@ -9,7 +9,7 @@ Location: `/ontologies`
 
 | Ontology | Filename |
 | -------- | -------- |
-| PNS Ontology | `nhanes.ttl` |
+| PNS Ontology | `pns.ttl` |
 
 ## HADatAc Metadata
 

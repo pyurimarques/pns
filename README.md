@@ -25,6 +25,6 @@ Location: `/metadata`
 
 ### Available Semantic Data Dictionaries
 
-| NHANES dataset | Type | Filename |
+| PNS dataset | Type | Filename |
 | -------------- | ---- | -------- |
 | PNS Module C | Características gerais dos moradores | `SDD-PNS-MODULEC.xlsx` |

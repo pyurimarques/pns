@@ -1,0 +1,430 @@
+@prefix : <http://purl.org/twc/PNS#> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_> .
+@prefix exo: <http://purl.obolibrary.org/obo/ExO_> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix hasco: <http://hadatac.org/ont/hasco/> .
+@prefix hhear: <http://purl.org/twc/HHEAR_> .
+@prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
+@prefix vstoi: <http://hadatac.org/ont/vstoi#> .
+@prefix nhanes: <http://purl.org/twc/NHANES#> .
+@base <http://purl.org/twc/PNS> .
+
+<http://purl.org/twc/PNS> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://hadatac.org/ont/hasco/StudyIndicator
+hasco:StudyIndicator rdf:type owl:Class .
+
+
+###  http://hadatac.org/ont/vstoi#Questionnaire
+vstoi:Questionnaire rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000001
+obo:BFO_0000001 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000002
+obo:BFO_0000002 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000001 .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000004
+obo:BFO_0000004 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000002 .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000029
+obo:BFO_0000029 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000141 .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000141
+obo:BFO_0000141 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000004 .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000004
+obo:ENVO_00000004 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000005
+obo:ENVO_00000005 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_00000004 .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156312
+obo:NCIT_C156312 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C87194 ;
+                 rdfs:label "Any of the 27 federal units of Brazil, which include the 26 federal states of Brazil, plus the Federal District which contains the capital city, Brasilia. [Definition Source: NCI]"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156313
+obo:NCIT_C156313 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Acre"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156314
+obo:NCIT_C156314 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Alagoas"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156315
+obo:NCIT_C156315 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Amapa"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156316
+obo:NCIT_C156316 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Amazonas"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156317
+obo:NCIT_C156317 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Bahia"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156318
+obo:NCIT_C156318 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Ceara"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156319
+obo:NCIT_C156319 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Distrito Federal"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156320
+obo:NCIT_C156320 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Espirito Santo"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156321
+obo:NCIT_C156321 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Goias"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156322
+obo:NCIT_C156322 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Maranhao"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156323
+obo:NCIT_C156323 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Mato Grosso"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156324
+obo:NCIT_C156324 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Mato Grosso do Sul"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156325
+obo:NCIT_C156325 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Minas Gerais"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156326
+obo:NCIT_C156326 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Paraná"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156327
+obo:NCIT_C156327 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Paraíba"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156328
+obo:NCIT_C156328 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Pará"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156329
+obo:NCIT_C156329 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Pernambuco"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156330
+obo:NCIT_C156330 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Piauí"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156331
+obo:NCIT_C156331 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Rio de Janeiro"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156332
+obo:NCIT_C156332 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Rio Grande do Norte"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156333
+obo:NCIT_C156333 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Rio Grande do Sul"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156334
+obo:NCIT_C156334 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Rondônia"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156335
+obo:NCIT_C156335 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Roraíma"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156336
+obo:NCIT_C156336 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Santa Catarina"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156337
+obo:NCIT_C156337 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Sergipe"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156338
+obo:NCIT_C156338 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "São Paulo"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156339
+obo:NCIT_C156339 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C156312 ;
+                 rdfs:label "Tocantins"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C171087
+obo:NCIT_C171087 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C20189 .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C17357
+obo:NCIT_C17357 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C19332 .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C185193
+obo:NCIT_C185193 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:NCIT_C48655 ;
+                 rdfs:label "Not Recorded" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C19332
+obo:NCIT_C19332 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C171087 .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C20189
+obo:NCIT_C20189 rdf:type owl:Class ;
+                rdfs:label "Property or Attribute" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C27993
+obo:NCIT_C27993 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C41009 ;
+                rdfs:label "General Qualifier" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C41009
+obo:NCIT_C41009 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C20189 ;
+                rdfs:label "Qualifier" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C41260
+obo:NCIT_C41260 rdf:type owl:Class ;
+                rdfs:subClassOf sio:SIO_001015 ;
+                rdfs:label "Asia" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C41261
+obo:NCIT_C41261 rdf:type owl:Class ;
+                rdfs:subClassOf sio:SIO_001015 ;
+                rdfs:label "White" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C46109
+obo:NCIT_C46109 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C17357 ;
+                rdfs:label "Male Gender"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C46110
+obo:NCIT_C46110 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C17357 ;
+                rdfs:label "Female Gender"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C48655
+obo:NCIT_C48655 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C27993 ;
+                rdfs:label "Missing Value Reason" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C48660
+obo:NCIT_C48660 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C48655 ;
+                rdfs:label "Not Applicable" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C51024
+obo:NCIT_C51024 rdf:type owl:Class ;
+                rdfs:subClassOf obo:NCIT_C48655 ;
+                rdfs:label "Response Declined" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C67109
+obo:NCIT_C67109 rdf:type owl:Class ;
+                rdfs:subClassOf sio:SIO_001015 ;
+                rdfs:label "Multiracial" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C87194
+obo:NCIT_C87194 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ENVO_00000005 .
+
+
+###  http://purl.org/twc/HHEAR_00050
+<http://purl.org/twc/HHEAR_00050> rdf:type owl:Class ;
+                                  rdfs:subClassOf hasco:StudyIndicator ;
+                                  rdfs:label "Demographic" .
+
+
+###  http://purl.org/twc/HHEAR_00522
+<http://purl.org/twc/HHEAR_00522> rdf:type owl:Class ;
+                                  rdfs:subClassOf sio:SIO_001015 ;
+                                  rdfs:label "Non-White" .
+
+
+###  http://purl.org/twc/PNS#PNSQuestionarie
+:PNSQuestionarie rdf:type owl:Class ;
+                 rdfs:subClassOf vstoi:Questionnaire .
+
+
+###  http://purl.org/twc/PNS#PNS_000001
+:PNS_000001 rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/twc/HHEAR_00522> .
+
+
+###  http://purl.org/twc/PNS#PNS_000002
+:PNS_000002 rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/twc/HHEAR_00522> .
+
+
+###  http://purl.org/twc/PNS#PNS_000003
+:PNS_000003 rdf:type owl:Class ;
+            rdfs:subClassOf sio:SIO_000794 ;
+            rdfs:label "Number of people living in a house" .
+
+
+###  http://semanticscience.org/resource/SIO_000000
+sio:SIO_000000 rdf:type owl:Class ;
+               rdfs:label "entity" .
+
+
+###  http://semanticscience.org/resource/SIO_000015
+sio:SIO_000015 rdf:type owl:Class ;
+               rdfs:subClassOf sio:SIO_000776 ;
+               rdfs:label "information content entity" .
+
+
+###  http://semanticscience.org/resource/SIO_000052
+sio:SIO_000052 rdf:type owl:Class ;
+               rdfs:subClassOf sio:SIO_000070 ;
+               rdfs:label "quantity" .
+
+
+###  http://semanticscience.org/resource/SIO_000070
+sio:SIO_000070 rdf:type owl:Class ;
+               rdfs:subClassOf sio:SIO_000366 ;
+               rdfs:label "measurement value" .
+
+
+###  http://semanticscience.org/resource/SIO_000075
+sio:SIO_000075 rdf:type owl:Class ;
+               rdfs:subClassOf sio:SIO_000015 ;
+               rdfs:label "mathematical entity" .
+
+
+###  http://semanticscience.org/resource/SIO_000366
+sio:SIO_000366 rdf:type owl:Class ;
+               rdfs:subClassOf sio:SIO_001431 ;
+               rdfs:label "number" .
+
+
+###  http://semanticscience.org/resource/SIO_000776
+sio:SIO_000776 rdf:type owl:Class ;
+               rdfs:subClassOf sio:SIO_000000 ;
+               rdfs:label "object" .
+
+
+###  http://semanticscience.org/resource/SIO_000794
+sio:SIO_000794 rdf:type owl:Class ;
+               rdfs:subClassOf sio:dimensionless_quantity ;
+               rdfs:label "count" .
+
+
+###  http://semanticscience.org/resource/SIO_001015
+sio:SIO_001015 rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.org/twc/HHEAR_00050> ;
+               rdfs:label "Race" .
+
+
+###  http://semanticscience.org/resource/SIO_001429
+sio:SIO_001429 rdf:type owl:Class ;
+               rdfs:subClassOf sio:SIO_000075 ;
+               rdfs:label "tensor" .
+
+
+###  http://semanticscience.org/resource/SIO_001431
+sio:SIO_001431 rdf:type owl:Class ;
+               rdfs:subClassOf sio:SIO_001429 ;
+               rdfs:label "scalar" .
+
+
+###  http://semanticscience.org/resource/dimensionless_quantity
+sio:dimensionless_quantity rdf:type owl:Class ;
+                           rdfs:subClassOf sio:SIO_000052 .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
